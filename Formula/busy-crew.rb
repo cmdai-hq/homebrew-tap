@@ -11,7 +11,7 @@ class BusyCrew < Formula
   depends_on :macos # LaunchAgents, and a Swift menu bar app compiled on install.
   depends_on "pillow"
   depends_on "pydantic" # Ships pydantic-core, which would otherwise need Rust.
-  depends_on "python@3.14"
+  depends_on "python@3.15"
 
   pypi_packages package_name:     "busy-crew",
                 exclude_packages: %w[pillow pydantic pydantic-core]
