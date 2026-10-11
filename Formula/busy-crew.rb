@@ -3,8 +3,8 @@ class BusyCrew < Formula
 
   desc "Claude Code and Codex sessions on a BUSY Bar's LED display"
   homepage "https://github.com/cmdai-hq/busy-crew"
-  url "https://files.pythonhosted.org/packages/78/81/a8ec04ed99bc2283eebafffe42ec0a7e7f9b6ea84ccf39841d62a4b69e4a/busy_crew-1.1.1.tar.gz"
-  sha256 "102a9740e392982e2a6dc90bc06897ff93c07b791e9a99f80c9c6a75394afa82"
+  url "https://files.pythonhosted.org/packages/d1/b6/fe054de54f54dec8fd887681623e783dd6186b6d97cb308c7eee805a6a63/busy_crew-1.1.2.tar.gz"
+  sha256 "15fded2f484c3ebb67f17376b6fa5b1c34410c816009ef6172d703bec0117c48"
   license "MIT"
   head "https://github.com/cmdai-hq/busy-crew.git", branch: "main"
 
