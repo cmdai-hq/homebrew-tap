@@ -3,8 +3,8 @@ class BusyCrew < Formula
 
   desc "Claude Code and Codex sessions on a BUSY Bar's LED display"
   homepage "https://github.com/cmdai-hq/busy-crew"
-  url "https://github.com/cmdai-hq/busy-crew/archive/refs/tags/v1.0.1.tar.gz"
-  sha256 "cb825b5e13ed5bde677d45967b5e7d3565d01143b75953ccf73310c7101663ee"
+  url "https://files.pythonhosted.org/packages/20/03/cccff9decd17eefdcad0e1de6504334a8e4e6abb8e7e7fdc30ff1bf8a491/busy_crew-1.1.0.tar.gz"
+  sha256 "562779d0801d160cb84720c0c6e6bcccee2d51b5a0ae2b95455a13e641f4226c"
   license "MIT"
   head "https://github.com/cmdai-hq/busy-crew.git", branch: "main"
 
@@ -15,11 +15,6 @@ class BusyCrew < Formula
 
   pypi_packages package_name:     "busy-crew",
                 exclude_packages: %w[pillow pydantic pydantic-core]
-
-  resource "annotated-types" do
-    url "https://files.pythonhosted.org/packages/5f/56/a8120250d128bed162cd73c76d45f6ef9991f3e068f62a8ee060afa3104a/annotated_types-0.8.0.tar.gz"
-    sha256 "13b2beaad985e05e2d6407ee4c4f35590b11f8d693a258a561055cac8f64cab7"
-  end
 
   resource "anyio" do
     url "https://files.pythonhosted.org/packages/a9/d2/f4d173e22df740bc37b1db102b386ba719b66e95b0f0d751f556b387e6d2/anyio-4.15.1.tar.gz"
