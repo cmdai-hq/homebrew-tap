@@ -1,0 +1,27 @@
+name: brew test-bot
+on:
+  push:
+    branches: [main]
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  test-bot:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [macos-latest]
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 45
+    steps:
+      - name: Set up Homebrew
+        uses: Homebrew/actions/setup-homebrew@eb02c69dbabdb66ff183c614f4ce7ab3c077592c # main
+      - run: brew test-bot --only-cleanup-before
+      - run: brew test-bot --only-setup
+      - run: brew test-bot --only-tap-syntax
+      - name: Audit, build from source and test changed formulae
+        if: github.event_name == 'pull_request'
+        run: brew test-bot --only-formulae
+      - name: Strict audit of a new formula
+        if: github.event_name == 'pull_request'
+        run: brew audit --strict --new --online cmdai-hq/tap/busy-crew
