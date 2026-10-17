@@ -8,6 +8,11 @@ class BusyCrew < Formula
   license "MIT"
   head "https://github.com/cmdai-hq/busy-crew.git", branch: "main"
 
+  bottle do
+    root_url "https://github.com/cmdai-hq/busy-crew/releases/download/v1.1.5"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "6b53141b4058fa3f6aab9a97eeef5398215e941bf4034f9d30b3afec296f89e2"
+  end
+
   depends_on :macos # LaunchAgents, and a Swift menu bar app compiled on install.
   depends_on "pillow"
   depends_on "pydantic" # Ships pydantic-core, which would otherwise need Rust.
