@@ -4,15 +4,15 @@ class Humanload < Formula
   homepage "https://humanload.dev"
   license :cannot_represent
 
-  depends_on macos: :ventura
+  depends_on macos: :tahoe
 
   # brew audit refuses url and sha256 inside on_arm / on_intel: an explicit condition is the accepted form.
   if Hardware::CPU.arm?
     url "https://github.com/cmdai-hq/homebrew-tap/releases/download/v0.9.0/humanload_0.9.0_darwin_arm64.tar.gz"
-    sha256 "5143a29f234e15deb6daa1d525e9d8b9133f688fba804300af70a782931591e2"
+    sha256 "3ac3486be704d67fab3176235f5f50e401c94cee350a18ef924a1855d0610408"
   else
     url "https://github.com/cmdai-hq/homebrew-tap/releases/download/v0.9.0/humanload_0.9.0_darwin_amd64.tar.gz"
-    sha256 "5d40f31064b2a46eea6deabe6e7e5fc0dfb901191c848864d4bc6065bba6eb63"
+    sha256 "18c09dea72d356cc0e82bb7beaffa15f8f3f1a130fffc196eb80b134ddb72953"
   end
 
   def install

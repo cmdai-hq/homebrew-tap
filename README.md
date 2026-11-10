@@ -18,7 +18,7 @@ Report problems with Busy Crew itself in [its repository](https://github.com/cmd
 ## Humanload (closed beta)
 
 Humanload counts, on your Mac, the work of supervising coding agents in Claude Code, and sends only those counts to
-`app.humanload.eu`. The beta is by invitation; macOS 13 or later.
+`app.humanload.eu`. The beta is by invitation; macOS 26 (Tahoe) or later.
 
 ```sh
 brew install cmdai-hq/tap/humanload
