@@ -3,14 +3,14 @@ class BusyCrew < Formula
 
   desc "Claude Code and Codex sessions on a BUSY Bar's LED display"
   homepage "https://github.com/cmdai-hq/busy-crew"
-  url "https://files.pythonhosted.org/packages/a4/bf/5c3ff78990cee081dc40e61d16270076bc99023197029d7b337fc91f923f/busy_crew-1.1.5.tar.gz"
-  sha256 "54d2b97e1d86fc16f2955070d24c703338601cb8eb4b64f80a9bbd0d514c56a4"
+  url "https://files.pythonhosted.org/packages/7e/0f/09e86e22f3bad0f7c34718010152e1f93854daca8edade7695b67fdb348e/busy_crew-1.2.0.tar.gz"
+  sha256 "5f2a5875935720a587dfe0810d11d7172664d02a31b9127750bed1231e6de2bb"
   license "MIT"
   head "https://github.com/cmdai-hq/busy-crew.git", branch: "main"
 
   bottle do
-    root_url "https://github.com/cmdai-hq/busy-crew/releases/download/v1.1.5"
-    sha256 cellar: :any_skip_relocation, arm64_sequoia: "6b53141b4058fa3f6aab9a97eeef5398215e941bf4034f9d30b3afec296f89e2"
+    root_url "https://github.com/cmdai-hq/busy-crew/releases/download/v1.2.0"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "5fbf7814e72948eb9ced131989d8887822c1ee48cafc2927b399ce488d1b7057"
   end
 
   depends_on :macos # LaunchAgents, and a Swift menu bar app compiled on install.
