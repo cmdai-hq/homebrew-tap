@@ -9,10 +9,10 @@ class Humanload < Formula
   # brew audit refuses url and sha256 inside on_arm / on_intel: an explicit condition is the accepted form.
   if Hardware::CPU.arm?
     url "https://github.com/cmdai-hq/homebrew-tap/releases/download/v0.9.0/humanload_0.9.0_darwin_arm64.tar.gz"
-    sha256 "3ac3486be704d67fab3176235f5f50e401c94cee350a18ef924a1855d0610408"
+    sha256 "519dfd9aa2779f5118976206d5c02a2a465917dc312948ad2ba8abd5d3a01526"
   else
     url "https://github.com/cmdai-hq/homebrew-tap/releases/download/v0.9.0/humanload_0.9.0_darwin_amd64.tar.gz"
-    sha256 "18c09dea72d356cc0e82bb7beaffa15f8f3f1a130fffc196eb80b134ddb72953"
+    sha256 "7a481a33dc72ad48e4a383b70fbf7abde5cf72176c59b74ea36565ddacdcf41c"
   end
 
   def install
